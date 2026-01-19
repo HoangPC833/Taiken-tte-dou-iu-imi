@@ -6,7 +6,7 @@
 }
 
 :root {
-  --bg: hsl(0,0%,100%);
+  --bg: #FF6666;
   --fg: hsl(0,0%,0%);
   font-size: 30px;
 }
