@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icon Lines</title>
+
+  <!-- Liên kết tới file CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <div class="icon icon--1">
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div>
+    </div>
+
+    <div class="icon icon--2">
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div><div class="icon__line"></div>
+      <div class="icon__line"></div><div class="icon__line"></div>
+    </div>
+  </main>
+
+  <!-- Audio (ẩn) -->
+  <audio id="music" src="Instagram.mp3"></audio>
+
+  <!-- Script phát nhạc khi chạm màn hình -->
+  <script>
+    const music = document.getElementById("music");
+    let played = false;
+
+    document.body.addEventListener("click", () => {
+      if (!played) {
+        music.play();
+        played = true;
+      }
+    });
+  </script>
+
+</body>
+</html>
